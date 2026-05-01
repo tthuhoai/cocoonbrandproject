@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- Thiết lập responsive cho mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cocoon - Original Vietnam</title>
+  <!-- CSS dùng chung cho tất cả các trang (header, footer, reset) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font chữ: Playfair Display (tiêu đề) và Roboto (nội dung) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== HEADER: Logo + Menu điều hướng + Hotline ========== -->
+  <header class="header">
+    <div class="logo">
+      <img src="../media/coconutlogo1.png" alt="The Cocoon">
+    </div>
+    <!-- Thanh điều hướng chính, liên kết tới các trang -->
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="product.html">Sản phẩm</a>
+      <a href="blog.html">Bài viết</a>
+      <a href="login.html">Đăng nhập</a>
+      <a href="register.html">Đăng kí</a>
+    </nav>
+    <div class="hotline">📞 19009300</div>
+  </header>
+
+  <!-- ========== HERO BANNER: Slogan + Ảnh sản phẩm tổng hợp ========== -->
+  <section class="hero">
+    <!-- Phần text slogan bên trái -->
+    <div class="hero-text">
+      <h1>COCOON – TỰ HÀO THƯƠNG HIỆU VIỆT NAM TIÊN PHONG CHO XU HƯỚNG MỸ PHẨM THUẦN CHAY</h1>
+    </div>
+    <!-- Ảnh sản phẩm bên phải, tràn ra mép -->
+    <div class="hero-image">
+      <img src="../media/sanphamsumary.png" alt="Cocoon products">
+    </div>
+    <!-- Mã số sinh viên góc phải dưới -->
+    <span class="student-id">524108096</span>
+  </section>
+
+  <!-- ========== DANH MỤC SẢN PHẨM: Menu danh mục + 3 sản phẩm nổi bật ========== -->
+  <section class="products">
+    <h2>Danh mục sản phẩm <span class="leaf">🌿</span></h2>
+    <div class="products-content">
+      <!-- Danh mục bên trái -->
+      <ul class="category-list">
+        <li>Chăm sóc da mặt (Face)</li>
+        <li>Chăm sóc cơ thể (Body)</li>
+        <li>Chăm sóc tóc (Hair)</li>
+        <li>Dòng sản phẩm Cà phê Đắk Lắk</li>
+        <li>Dòng sản phẩm Bưởi / Bí đao</li>
+      </ul>
+      <!-- 3 sản phẩm nổi bật bên phải -->
+      <div class="product-cards">
+        <h3 class="product-cards-title">Sản phẩm nổi bật</h3>
+        <div class="product-cards-list">
+          <!-- Sản phẩm 1 -->
+          <div class="product-card">
+            <img src="../media/cafedaklak.png" alt="Cà phê Đắk Lắk">
+            <p class="product-name">Cà phê Đắk Lắk làm sạch da chết cơ thể 200ml</p>
+            <p class="product-price">133.000 đ</p>
+          </div>
+          <!-- Sản phẩm 2 -->
+          <div class="product-card">
+            <img src="../media/toner.png" alt="Toner nước cân bằng da">
+            <p class="product-name">Toner nước cân bằng da SEN Hậu Giang cocoon 310ml</p>
+            <p class="product-price">299.000 đ</p>
+          </div>
+          <!-- Sản phẩm 3 -->
+          <div class="product-card">
+            <img src="../media/matna.png" alt="Mặt nạ nghệ Hưng Yên">
+            <p class="product-name">Mặt nạ nghệ Hưng Yên 100ml</p>
+            <p class="product-price">339.000 đ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SLOGAN: Câu trích dẫn + 3 icon giá trị cốt lõi ========== -->
+  <section class="slogan">
+    <p class="quote">"Cocoon– Mỹ phẩm thuần chay– cho nét đẹp thuần Việt"</p>
+    <p class="source">ELLE VIETNAM</p>
+    <!-- 3 icon: Thuần chay, Không thử nghiệm động vật, Nguyên liệu Việt -->
+    <div class="icons">
+      <div class="icon-item">
+        <img src="../media/coxanh.png" alt="Thuần chay" class="icon-img">
+        <p>100% Thuần chay</p>
+      </div>
+      <div class="icon-item">
+        <img src="../media/contho.png" alt="Không thử nghiệm trên động vật" class="icon-img">
+        <p>Không thử nghiệm trên động vật</p>
+      </div>
+      <div class="icon-item">
+        <img src="../media/cafe.png" alt="Nguyên liệu thuần Việt" class="icon-img">
+        <p>Nguyên liệu thuần Việt</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VOUCHER: Ảnh banner khuyến mãi ========== -->
+  <section class="voucher">
+    <img src="../media/voucherdesign.png" alt="Săn ngay voucher - Ưu đãi bất ngờ" class="voucher-img">
+  </section>
+
+  <!-- ========== FOOTER: Logo + Mô tả + Liên hệ + Mạng xã hội ========== -->
+  <footer class="footer">
+    <!-- Phần trên: logo, mô tả, nút liên hệ -->
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="../media/coconutlogo.png" alt="The Cocoon">
+      </div>
+      <p class="footer-desc">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
+      <a href="#" class="btn-contact">Liên hệ</a>
+    </div>
+    <!-- Phần dưới: 2 cột - Social + Contact Us -->
+    <div class="footer-bottom">
+      <div class="footer-col">
+        <p class="social-title">Social</p>
+        <a href="#">📷 Instagram</a>
+        <a href="#">📘 Facebook</a>
+      </div>
+      <div class="footer-col">
+        <p class="social-title">Contact Us</p>
+        <p class="footer-contact">HOTLINE: <a href="tel:19009300">19009300</a></p>
+        <p class="footer-contact">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

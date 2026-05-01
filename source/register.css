@@ -1,0 +1,75 @@
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #fdf6f0 0%, #f5e6da 100%);
+  padding: 40px 20px;
+}
+
+.register-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.register-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 32px;
+  color: #3e2723;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #d4c4b0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  background: #fdf6f0;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #b5651d;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 14px;
+  background: #e8a88a;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.register-form button:hover {
+  background: #d4967a;
+}
+
+.register-login-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 16px;
+  color: #666;
+}
+
+.register-login-link a {
+  color: #b5651d;
+  font-weight: 500;
+}
+
+.register-login-link a:hover {
+  text-decoration: underline;
+}
