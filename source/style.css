@@ -130,8 +130,24 @@ a {
 /* Danh mục bên trái, chiều rộng cố định */
 .category-list {
   flex: 0 0 180px;
-  list-style: none;
+  list-style: decimal;
+  padding-left: 20px;
 }
+
+/* Danh mục ngang cho trang product */
+.category-list-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  list-style: decimal;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.category-list-horizontal li {
+  border-bottom: none;
+}
+
 
 .category-list li {
   padding: 10px 0;
