@@ -23,8 +23,20 @@
   gap: 40px 30px;                          /* Khoảng cách hàng x cột */
 }
 
+/* Grid trong product-cards */
 .product-cards .all-products-grid {
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+}
+
+/* Điều chỉnh product-cards cho trang product */
+.products .product-cards {
+  flex: 1;
+}
+
+.products .product-cards .product-cards-title {
+  text-align: left;
+  margin-bottom: 30px;
 }
 /* Mỗi sản phẩm */
 .all-product-item {
