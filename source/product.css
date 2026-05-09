@@ -22,7 +22,15 @@
   grid-template-columns: repeat(3, 1fr);  /* 3 cột đều nhau */
   gap: 40px 30px;                          /* Khoảng cách hàng x cột */
 }
-
+/* Đưa danh sách có số về dạng Grid 3 cột */
+.product-list-ordered {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /* Chia 3 cột đều nhau */
+    gap: 40px 20px;       /* Khoảng cách: dọc 40px, ngang 20px */
+    padding: 0;           /* Xóa padding mặc định của ol */
+    list-style-position: inside; /* Đưa con số vào bên trong khối sản phẩm */
+    width:100%;
+}
 /* Mỗi sản phẩm */
 .all-product-item {
   text-align: center;
@@ -30,10 +38,13 @@
 
 /* Ảnh sản phẩm */
 .all-product-item img {
-  width: 100%;
-  height: 350px;
-  object-fit: contain;        /* Hiển thị trọn ảnh */
-  border-radius: 8px;
+ width: 100%;
+    max-width: 280px;      /* Giới hạn độ rộng ảnh */
+    aspect-ratio: 1 / 1;   /* Ép ảnh về khung vuông */
+    object-fit: contain;   /* Hiện đầy đủ sản phẩm trong khung */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 /* Tên sản phẩm */

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="blog.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="../media/coconutlogo.png">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
       <a href="product.html">Sản phẩm</a>
       <a href="blog.html">Bài viết</a>
       <a href="login.html">Đăng nhập</a>
-      <a href="register.html">Đăng kí</a>
+     
     </nav>
     <div class="hotline">📞 19009300</div>
   </header>
@@ -39,7 +40,7 @@
     <div class="featured-content">
       <h1>COCOON – TỰ HÀO THƯƠNG HIỆU VIỆT NAM TIÊN PHONG CHO XU HƯỚNG MỸ PHẨM THUẦN CHAY</h1>
       <p>Cocoon là thương hiệu mỹ phẩm thuần chay tiên phong tại Việt Nam, sử dụng 100% nguyên liệu từ thiên nhiên Việt Nam. Cùng tìm hiểu hành trình và sứ mệnh của Cocoon trong việc mang đến vẻ đẹp thuần Việt.</p>
-      <a href="#" class="btn-read">Đọc bài viết →</a>
+      <a href="https://cocoonvietnam.com/" class="btn-read" target="_blank">Đọc thêm →</a>
     </div>
   </section>
 
@@ -54,22 +55,34 @@
     <div class="blog-list">
 
       <!-- Bài viết 1 -->
-      <article class="blog-card">
-        <img src="../media/cafedaklak.png" alt="Cà phê Đắk Lắk">
-        <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Làm đẹp</span>
-            <span class="blog-date">01.10.25</span>
-          </div>
-          <h3>Vài "tip" giúp bạn tận hưởng trọn vẹn từng giây phút làm sạch da chết cùng Cà phê Đắk Lắk</h3>
-          <p>Hãy thử áp dụng một vài tip sau để gia tăng thêm những trải nghiệm thật "chill" với sản phẩm Cà phê Đắk Lắk làm sạch da chết cơ thể.</p>
-          <a href="#" class="read-more">Đọc thêm →</a>
+     <article class="blog-card">
+    <div class="video-frame">
+        <iframe 
+            src="https://www.youtube.com/embed/rH86s5h8yQs" 
+            title="Cocoon Official Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <div class="blog-card-body">
+        <div class="blog-meta">
+            <span class="blog-tag">Cocoon</span>
+            <span class="blog-date">31.03.26</span>
         </div>
-      </article>
-
+        <h3 class="blog-title">SỮA CHỐNG NẮNG BÍ ĐAO COCOON: BẢO VỆ RẤT CAO - TỰ TIN DƯỚI NẮNG</h3>
+        <p>Sữa Chống Nắng Bí Đao Cocoon với khả năng bảo vệ rất cao cùng các chỉ số SPF 50+, PA+++, UVA-PF 62.6, finish ráo mịn tự nhiên, kháng nước 80 phút, không cay mắt, dịu nhẹ cho làn da dầu mụn và da nhạy cảm. Đây sẽ là người bạn đồng hành giúp bạn hoàn toàn tự tin dưới nắng,
+           thoải mái vận động mà không lo ngại lớp nền bị xỉn màu hoặc bị chảy vệt trắng khi hoạt động ngoài trời.</p>
+        <a href="#" class="read-more">Xem thêm →</a>
+    </div>
+</article>
       <!-- Bài viết 2 -->
+       <div class="blog-list">
+    <ul class="blog-ul">
+       <li class="blog-li">
       <article class="blog-card">
-        <img src="../media/taydachetcafe.png" alt="Tẩy da chết cà phê">
+        <img src="../media/3buocsachdamat.png" alt="3 bước tẩy sạch da chết">
         <div class="blog-card-body">
           <div class="blog-meta">
             <span class="blog-tag">Làm đẹp</span>
@@ -80,10 +93,13 @@
           <a href="#" class="read-more">Đọc thêm →</a>
         </div>
       </article>
+    </li>
+  
 
       <!-- Bài viết 3 -->
+       <li class="blog-li">
       <article class="blog-card">
-        <img src="../media/srmnghe.png" alt="Sữa rửa mặt nghệ">
+        <img src="../media/lanhmanh.png" alt="Sảm phẩm lành mạnh">
         <div class="blog-card-body">
           <div class="blog-meta">
             <span class="blog-tag">Làm đẹp</span>
@@ -94,60 +110,68 @@
           <a href="#" class="read-more">Đọc thêm →</a>
         </div>
       </article>
+       </li>
 
+    </ul>
     </div>
   </section>
 
   <!-- ========== CHUYÊN MỤC: COCOON (tin tức thương hiệu) ========== -->
   <section class="blog-category">
-    <div class="blog-category-header">
-      <h2>Cocoon</h2>
-      <a href="#" class="view-all">Tất cả bài viết →</a>
-    </div>
-    <div class="blog-list">
-
-      <!-- Bài viết 1 -->
-      <article class="blog-card">
-        <img src="../media/matna.png" alt="Mặt nạ nghệ Hưng Yên">
-        <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Cocoon</span>
-            <span class="blog-date">31.03.26</span>
+  <div class="blog-category-header">
+    <h2>Cocoon</h2>
+    <a href="#" class="view-all">Tất cả bài viết →</a>
+  </div>
+<!--Bài viết 1-->
+  <div class="blog-list">
+    <ul class="blog-unorder-list">
+     <!--Bài viết số 1--> 
+      <li class="blog-item">
+        <article class="blog-card">
+          <img src="../media/myphammuonnoi.png" alt="Cocoon đi muôn nơi">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Cocoon</span>
+              <span class="blog-date">31.03.26</span>
+            </div>
+            <h3>Cocoon và hành trình mang nguyên liệu Việt ra thế giới</h3>
+            <p>Điều này đã mở ra cơ hội cho mỹ phẩm thuần chay từ Việt Nam bước vào một trong những trung tâm làm đẹp hàng đầu thế giới.</p>
+            <a href="#" class="read-more">Đọc thêm →</a>
           </div>
-          <h3>Cocoon và hành trình mang nguyên liệu Việt ra thế giới</h3>
-          <p>Điều này đã mở ra cơ hội cho mỹ phẩm thuần chay từ Việt Nam bước vào một trong những trung tâm làm đẹp hàng đầu thế giới.</p>
-          <a href="#" class="read-more">Đọc thêm →</a>
-        </div>
-      </article>
-
-      <!-- Bài viết 2 -->
-      <article class="blog-card">
-        <img src="../media/suachongnang.png" alt="Sữa chống nắng bí đao">
-        <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Cocoon</span>
-            <span class="blog-date">02.03.26</span>
+        </article>
+      </li>
+<!--Bài viết số 2-->
+      <li class="blog-item">
+        <article class="blog-card">
+          <img src="../media/Thuhoipin.png" alt="chương trình “Thu Hồi Pin Cũ – Bảo Vệ Trái Đất Xanh">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Cocoon</span>
+              <span class="blog-date">02.03.26</span>
+            </div>
+            <h3>Chương trình "Thu hồi pin cũ – Bảo vệ trái đất xanh" năm 2026</h3>
+            <p>Tiếp nối những hành trình bền bỉ vì môi trường, Cocoon tiếp tục phát động chương trình "Thu Hồi Pin Cũ – Bảo Vệ Trái Đất Xanh" lần thứ 5.</p>
+            <a href="#" class="read-more">Đọc thêm →</a>
           </div>
-          <h3>Chương trình "Thu hồi pin cũ – Bảo vệ trái đất xanh" năm 2026</h3>
-          <p>Tiếp nối những hành trình bền bỉ vì môi trường, Cocoon tiếp tục phát động chương trình "Thu Hồi Pin Cũ – Bảo Vệ Trái Đất Xanh" lần thứ 5.</p>
-          <a href="#" class="read-more">Đọc thêm →</a>
-        </div>
-      </article>
-
-      <!-- Bài viết 3 -->
-      <article class="blog-card">
-        <img src="../media/sapduongam.png" alt="Sáp dưỡng ẩm">
-        <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Cocoon</span>
-            <span class="blog-date">03.12.25</span>
+        </article>
+      </li>
+<!--Bài viết số 3-->
+      <li class="blog-item">
+        <article class="blog-card">
+          <img src="../media/dinhvithuonghieu.png" alt="Định vị thương hiệu">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Cocoon</span>
+              <span class="blog-date">03.12.25</span>
+            </div>
+            <h3>Chiến lược Marketing của Cocoon về mỹ phẩm thuần chay an toàn</h3>
+            <p>Chiến lược marketing của Cocoon đã truyền tải thông điệp đến người dùng là mỹ phẩm thuần chay, bảo vệ môi trường và không thử nghiệm trên động vật.</p>
+            <a href="#" class="read-more">Đọc thêm →</a>
           </div>
-          <h3>Cocoon x AAF: Ký kết hợp tác "Chung tay cứu trợ chó mèo lang thang" lần II</h3>
-          <p>Cocoon mong muốn được góp thêm một phần nhỏ bé trong việc cung cấp nguồn lực cho các trạm cứu hộ, giúp duy trì và nâng cao phúc lợi của chó mèo lang thang.</p>
-          <a href="#" class="read-more">Đọc thêm →</a>
-        </div>
-      </article>
+        </article>
+      </li>
 
+    </ul>
     </div>
   </section>
 
@@ -176,3 +200,5 @@
 
 </body>
 </html>
+
+

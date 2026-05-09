@@ -176,7 +176,7 @@ a {
 .product-card img {
   width: 100%;
   height: 380px;
-  object-fit: contain;        /* Hiển thị trọn ảnh, không bị cắt */
+  object-fit: cover;        /* Hiển thị trọn ảnh, không bị cắt */
 }
 
 /* Tên sản phẩm */
