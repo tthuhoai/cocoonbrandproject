@@ -4,79 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Đăng kí - The Cocoon</title>
-  <!-- CSS chung (header, footer) + CSS riêng cho đăng nhập/đăng kí -->
+  <link rel="icon" type="image/png" href="../media/coconutlogo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="auth.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   <link rel="icon" type="image/png" href="../media/coconutlogo.png">
 </head>
 <body>
 
-  <!-- ========== HEADER (giống trang chủ) ========== -->
-  <header class="header">
-    <div class="logo">
-      <img src="../media/coconutlogo1.png" alt="The Cocoon">
+  <!-- ========== HEADER ========== -->
+  <nav class="navbar navbar-expand-lg bg-white py-2 px-3 px-lg-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="../media/coconutlogo1.png" alt="The Cocoon" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Bài viết</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block">
+        <span class="fw-medium">📞 19009300</span>
+      </div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="product.html">Sản phẩm</a>
-      <a href="blog.html">Bài viết</a>
-      <a href="login.html">Đăng nhập</a>
-      
-    </nav>
-    <div class="hotline">📞 19009300</div>
-  </header>
+  </nav>
 
   <!-- ========== FORM ĐĂNG KÍ ========== -->
-  <section class="auth-section">
-    <div class="auth-form">
-      <h1 class="auth-title">Đăng kí</h1>
-      <form>
-        <!-- Ô nhập họ tên -->
-        <label for="fullname">Họ và tên</label>
-        <input type="text" id="fullname" placeholder="Nhập họ và tên" required>
-        <!-- Ô nhập email -->
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Nhập email của bạn" required>
-        <!-- Ô nhập số điện thoại -->
-        <label for="phone">Số điện thoại</label>
-        <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
-        <!-- Ô nhập mật khẩu -->
-        <label for="password">Mật khẩu</label>
-        <input type="password" id="password" placeholder="Nhập mật khẩu" required>
-        <!-- Ô xác nhận mật khẩu -->
-        <label for="confirm-password">Xác nhận mật khẩu</label>
-        <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
-        <!-- Nút đăng kí -->
-        <button type="submit" class="auth-btn">Đăng kí</button>
-      </form>
-      <!-- Link chuyển sang trang đăng nhập -->
-      <p class="auth-link">Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <h1 class="text-center mb-4 fs-3" style="font-family: 'Playfair Display', serif;">Đăng kí</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="fullname" class="form-label">Họ và tên</label>
+                  <input type="text" class="form-control" id="fullname" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Số điện thoại</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Mật khẩu</label>
+                  <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+                </div>
+                <div class="mb-3">
+                  <label for="confirm-password" class="form-label">Xác nhận mật khẩu</label>
+                  <input type="password" class="form-control" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                <button type="submit" class="btn w-100 text-white" style="background: #5a7a5a;">Đăng kí</button>
+              </form>
+              <p class="text-center mt-3 mb-0">Đã có tài khoản? <a href="login.html" style="color: #5a7a5a;">Đăng nhập</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER (giống trang chủ) ========== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="../media/coconutlogo.png" alt="The Cocoon">
+  <!-- ========== FOOTER ========== -->
+  <footer class="text-white py-4" style="background: #3e2723;">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+          <img src="../media/coconutlogo.png" alt="The Cocoon" height="60">
+        </div>
+        <div class="col-md-8">
+          <p class="mb-0 text-secondary">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
+        </div>
+        <div class="col-md-2 text-end">
+          <a href="#" class="btn" style="background: #e8a88a;">Liên hệ</a>
+        </div>
       </div>
-      <p class="footer-desc">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
-      <a href="#" class="btn-contact">Liên hệ</a>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-col">
-        <p class="social-title">Social</p>
-        <a href="#">📷 Instagram</a>
-        <a href="#">📘 Facebook</a>
-      </div>
-      <div class="footer-col">
-        <p class="social-title">Contact Us</p>
-        <p class="footer-contact">HOTLINE: <a href="tel:19009300">19009300</a></p>
-        <p class="footer-contact">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></p>
+      <hr class="border-secondary">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Social</p>
+          <a href="#" class="text-secondary text-decoration-none d-block mb-1">📷 Instagram</a>
+          <a href="#" class="text-secondary text-decoration-none d-block">📘 Facebook</a>
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Contact Us</p>
+          <p class="text-secondary mb-1">HOTLINE: <a href="tel:19009300" class="text-secondary">19009300</a></p>
+          <p class="text-secondary">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM" class="text-secondary">WE@COCOONVIETNAM.COM</a></p>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

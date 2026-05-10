@@ -1,141 +1,169 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <!-- Thiết lập responsive cho mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Cocoon - Original Vietnam</title>
-  <!-- CHÈN LỆNH ICON VÀO ĐÂY -->
-    <link rel="icon" type="image/png" href="../media/coconutlogo.png">
-  <!-- CSS dùng chung cho tất cả các trang (header, footer, reset) -->
+  <link rel="icon" type="image/png" href="../media/coconutlogo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Font chữ: Playfair Display (tiêu đề) và Roboto (nội dung) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-  <!-- ========== HEADER: Logo + Menu điều hướng + Hotline ========== -->
+  <!-- ========== HEADER ========== -->
   <header class="header">
-    <div class="logo">
-      <img src="../media/coconutlogo1.png" alt="The Cocoon">
-    </div>
-    <!-- Thanh điều hướng chính, liên kết tới các trang -->
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="product.html">Sản phẩm</a>
-      <a href="blog.html">Bài viết</a>
-      <a href="login.html">Đăng nhập</a>
-      
+    <nav class="navbar navbar-expand-lg bg-white py-2 px-3 px-lg-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="../media/coconutlogo1.png" alt="The Cocoon" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Sản phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Bài viết</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <span class="fw-medium">📞 19009300</span>
+        </div>
+      </div>
     </nav>
-    <div class="hotline">📞 19009300</div>
   </header>
 
-  <!-- ========== HERO BANNER: Slogan + Ảnh sản phẩm tổng hợp ========== -->
-  <section class="hero">
-    <!-- Phần text slogan bên trái -->
-    <div class="hero-text">
-      <h1>COCOON – TỰ HÀO THƯƠNG HIỆU VIỆT NAM TIÊN PHONG CHO XU HƯỚNG MỸ PHẨM THUẦN CHAY</h1>
+  <!-- ========== HERO BANNER ========== -->
+  <section class="hero-section py-2" style="background: linear-gradient(135deg, #fdf6f0 0%, #f5e6da 100%);">
+      <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="fw-bold lh-base m-0">COCOON – TỰ HÀO THƯƠNG HIỆU VIỆT NAM TIÊN PHONG CHO XU HƯỚNG MỸ PHẨM THUẦN CHAY...</h1>
+            </div>
+            
+            <div class="col-lg-6 text-center">
+                <img src="../media/banner1.png" alt="Cocoon products" class="img-fluid" style="max-height: 500px;">
+            </div>
+        </div>
     </div>
-    <!-- Ảnh sản phẩm bên phải, tràn ra mép -->
-    <div class="hero-image">
-      <img src="../media/sanphamsumary.png" alt="Cocoon products">
-    </div>
-    <!-- Mã số sinh viên góc phải dưới -->
-    <span class="student-id">524108096</span>
-  </section>
+</section>
 
-  <!-- ========== DANH MỤC SẢN PHẨM: Menu danh mục + 3 sản phẩm nổi bật ========== -->
-  <section class="products">
-    <h2>Danh mục sản phẩm <span class="leaf">🌿</span></h2>
-    <div class="products-content">
-      <!-- Danh mục bên trái -->
-       <ol class="category-list">
-        <li><a href="product.html">Chăm sóc da mặt (Face)</a></li>
-        <li><a href="product.html">Chăm sóc cơ thể (Body)</a></li>
-        <li><a href="product.html">Chăm sóc tóc (Hair)</a></li>
-        <li><a href="product.html">Dòng sản phẩm Cà phê Đắk Lắk</a></li>
-        <li><a href="product.html">Dòng sản phẩm Bưởi / Bí đao</a></li>
-      </ol>
-      <!-- 3 sản phẩm nổi bật bên phải -->
-      <div class="product-cards">
-        <h3 class="product-cards-title">Sản phẩm nổi bật</h3>
-        <div class="product-cards-list">
-          <!-- Sản phẩm 1 -->
-          <div class="product-card">
-            <img src="../media/caphesachda.png" alt="Cà phê Đắk Lắk">
-            <p class="product-name">Cà phê Đắk Lắk làm sạch da chết cơ thể 200ml</p>
-            <p class="product-price">133.000 đ</p>
-          </div>
-          <!-- Sản phẩm 2 -->
-          <div class="product-card">
-            <img src="../media/tonerHG.png" alt="Toner nước cân bằng da">
-            <p class="product-name">Toner nước cân bằng da SEN Hậu Giang cocoon 310ml</p>
-            <p class="product-price">299.000 đ</p>
-          </div>
-          <!-- Sản phẩm 3 -->
-          <div class="product-card">
-            <img src="../media/matnangheHY (1).png" alt="Mặt nạ nghệ Hưng Yên">
-            <p class="product-name">Mặt nạ nghệ Hưng Yên 100ml</p>
-            <p class="product-price">339.000 đ</p>
+  <!-- ========== DANH MỤC SẢN PHẨM ========== -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Danh mục sản phẩm <span>🌿</span></h2>
+      <div class="row">
+        <!-- Danh mục bên trái -->
+        <div class="col-lg-3 mb-4">
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item border-0 ps-0"><a href="product.html" class="text-decoration-none text-dark">Chăm sóc da mặt (Face)</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="product.html" class="text-decoration-none text-dark">Chăm sóc cơ thể (Body)</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="product.html" class="text-decoration-none text-dark">Chăm sóc tóc (Hair)</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="product.html" class="text-decoration-none text-dark">Dòng sản phẩm Cà phê Đắk Lắk</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="product.html" class="text-decoration-none text-dark">Dòng sản phẩm Bưởi / Bí đao</a></li>
+          </ol>
+        </div>
+        <!-- Sản phẩm nổi bật -->
+        <div class="col-lg-9">
+          <h3 class="text-center fst-italic mb-4" style="color: #5a7a5a;">Sản phẩm nổi bật</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card border-0 text-center">
+                <img src="../media/caphesachda.png" class="card-img-top" alt="Cà phê Đắk Lắk" style="height: 300px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Cà phê Đắk Lắk làm sạch da chết cơ thể 200ml</p>
+                  <p class="fw-bold fs-5">133.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0 text-center">
+                <img src="../media/tonerHG.png" class="card-img-top" alt="Toner" style="height: 300px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Toner nước cân bằng da SEN Hậu Giang cocoon 310ml</p>
+                  <p class="fw-bold fs-5">299.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0 text-center">
+                <img src="../media/matnangheHY (1).png" class="card-img-top" alt="Mặt nạ nghệ" style="height: 300px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Mặt nạ nghệ Hưng Yên 100ml</p>
+                  <p class="fw-bold fs-5">339.000 đ</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== SLOGAN: Câu trích dẫn + 3 icon giá trị cốt lõi ========== -->
-  <section class="slogan">
-    <p class="quote">"Cocoon– Mỹ phẩm thuần chay– cho nét đẹp thuần Việt"</p>
-    <p class="source">ELLE VIETNAM</p>
-    <!-- 3 icon: Thuần chay, Không thử nghiệm động vật, Nguyên liệu Việt -->
-    <div class="icons">
-      <div class="icon-item">
-        <img src="../media/coxanh.png" alt="Thuần chay" class="icon-img">
-        <p>100% Thuần chay</p>
-      </div>
-      <div class="icon-item">
-        <img src="../media/contho.png" alt="Không thử nghiệm trên động vật" class="icon-img">
-        <p>Không thử nghiệm trên động vật</p>
-      </div>
-      <div class="icon-item">
-        <img src="../media/cafe.png" alt="Nguyên liệu thuần Việt" class="icon-img">
-        <p>Nguyên liệu thuần Việt</p>
+  <!-- ========== SLOGAN ========== -->
+  <section class="py-5 text-center bg-white">
+    <div class="container">
+      <p class="display-5 fst-italic mb-3" style="font-family: 'Playfair Display', serif; color: #c9a227;">"Cocoon– Mỹ phẩm thuần chay– cho nét đẹp thuần Việt"</p>
+      <p class="fs-4 fw-bold mb-5" style="letter-spacing: 2px;">ELLE VIETNAM</p>
+      <div class="row justify-content-center g-5">
+        <div class="col-md-3 text-center">
+          <img src="../media/coxanh.png" alt="Thuần chay" class="mb-3" style="width: 100px; height: 100px; object-fit: contain;">
+          <p class="fs-5 fw-medium">100% Thuần chay</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="../media/contho.png" alt="Không thử nghiệm" class="mb-3" style="width: 100px; height: 100px; object-fit: contain;">
+          <p class="fs-5 fw-medium">Không thử nghiệm trên động vật</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="../media/cafe.png" alt="Nguyên liệu Việt" class="mb-3" style="width: 100px; height: 100px; object-fit: contain;">
+          <p class="fs-5 fw-medium">Nguyên liệu thuần Việt</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== VOUCHER: Ảnh banner khuyến mãi ========== -->
-  <section class="voucher">
-    <img src="../media/voucherdesign.png" alt="Săn ngay voucher - Ưu đãi bất ngờ" class="voucher-img">
+  <!-- ========== VOUCHER ========== -->
+  <section>
+    <img src="../media/voucherdesign.png" alt="Voucher" class="w-100">
   </section>
 
-  <!-- ========== FOOTER: Logo + Mô tả + Liên hệ + Mạng xã hội ========== -->
-  <footer class="footer">
-    <!-- Phần trên: logo, mô tả, nút liên hệ -->
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="../media/coconutlogo.png" alt="The Cocoon">
+  <!-- ========== FOOTER ========== -->
+  <footer class="text-white py-4" style="background: #3e2723;">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+          <img src="../media/coconutlogo.png" alt="The Cocoon" height="60">
+        </div>
+        <div class="col-md-8">
+          <p class="mb-0 text-secondary">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
+        </div>
+        <div class="col-md-2 text-end">
+          <a href="#" class="btn" style="background: #e8a88a;">Liên hệ</a>
+        </div>
       </div>
-      <p class="footer-desc">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
-      <a href="#" class="btn-contact">Liên hệ</a>
-    </div>
-    <!-- Phần dưới: 2 cột - Social + Contact Us -->
-    <div class="footer-bottom">
-      <div class="footer-col">
-        <p class="social-title">Social</p>
-        <a href="#">📷 Instagram</a>
-        <a href="#">📘 Facebook</a>
-      </div>
-      <div class="footer-col">
-        <p class="social-title">Contact Us</p>
-        <p class="footer-contact">HOTLINE: <a href="tel:19009300">19009300</a></p>
-        <p class="footer-contact">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></p>
+      <hr class="border-secondary">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Social</p>
+          <a href="#" class="text-secondary text-decoration-none d-block mb-1">📷 Instagram</a>
+          <a href="#" class="text-secondary text-decoration-none d-block">📘 Facebook</a>
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Contact Us</p>
+          <p class="text-secondary mb-1">HOTLINE: <a href="tel:19009300" class="text-secondary">19009300</a></p>
+          <p class="text-secondary">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM" class="text-secondary">WE@COCOONVIETNAM.COM</a></p>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-

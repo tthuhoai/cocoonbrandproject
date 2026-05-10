@@ -1,204 +1,225 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bài viết - The Cocoon</title>
-  <!-- CSS chung (header, footer) + CSS riêng trang bài viết -->
+  <link rel="icon" type="image/png" href="../media/coconutlogo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="blog.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   <link rel="icon" type="image/png" href="../media/coconutlogo.png">
 </head>
 <body>
 
-  <!-- ========== HEADER (giống trang chủ) ========== -->
-  <header class="header">
-    <div class="logo">
-      <img src="../media/coconutlogo1.png" alt="The Cocoon">
+  <!-- ========== HEADER ========== -->
+  <nav class="navbar navbar-expand-lg bg-white py-2 px-3 px-lg-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="../media/coconutlogo1.png" alt="The Cocoon" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Bài viết</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block">
+        <span class="fw-medium">📞 19009300</span>
+      </div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="product.html">Sản phẩm</a>
-      <a href="blog.html">Bài viết</a>
-      <a href="login.html">Đăng nhập</a>
-     
-    </nav>
-    <div class="hotline">📞 19009300</div>
-  </header>
+  </nav>
 
-  <!-- ========== BREADCRUMB: Đường dẫn điều hướng ========== -->
-  <div class="breadcrumb">
-    <a href="index.html">Trang chủ</a> &gt; <span>Bài viết</span>
-  </div>
+  <!-- ========== BREADCRUMB ========== -->
+  <nav aria-label="breadcrumb" class="py-3 px-4">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Trang chủ</a></li>
+      <li class="breadcrumb-item active">Bài viết</li>
+    </ol>
+  </nav>
 
-  <!-- ========== BÀI VIẾT NỔI BẬT: Ảnh lớn bên trái + Nội dung bên phải ========== -->
-  <section class="featured-post">
-    <div class="featured-img">
-      <img src="../media/sanphamsumary.png" alt="Cocoon thuần chay">
-    </div>
-    <div class="featured-content">
-      <h1>COCOON – TỰ HÀO THƯƠNG HIỆU VIỆT NAM TIÊN PHONG CHO XU HƯỚNG MỸ PHẨM THUẦN CHAY</h1>
-      <p>Cocoon là thương hiệu mỹ phẩm thuần chay tiên phong tại Việt Nam, sử dụng 100% nguyên liệu từ thiên nhiên Việt Nam. Cùng tìm hiểu hành trình và sứ mệnh của Cocoon trong việc mang đến vẻ đẹp thuần Việt.</p>
-      <a href="https://cocoonvietnam.com/" class="btn-read" target="_blank">Đọc thêm →</a>
+  <!-- ========== BÀI VIẾT NỔI BẬT ========== -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <img src="../media/banner1.png" alt="Cocoon thuần chay" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="fw-bold mb-3">COCOON – TỰ HÀO THƯƠNG HIỆU VIỆT NAM TIÊN PHONG CHO XU HƯỚNG MỸ PHẨM THUẦN CHAY</h1>
+          <p class="text-muted">Cocoon là thương hiệu mỹ phẩm thuần chay tiên phong tại Việt Nam, sử dụng 100% nguyên liệu từ thiên nhiên Việt Nam. Cùng tìm hiểu hành trình và sứ mệnh của Cocoon trong việc mang đến vẻ đẹp thuần Việt.</p>
+          <a href="https://cocoonvietnam.com/" class="btn text-white" style="background: #5a7a5a;" target="_blank">Đọc thêm →</a>
+        </div>
+        </div>
     </div>
   </section>
 
   <!-- ========== CHUYÊN MỤC: LÀM ĐẸP ========== -->
-  <section class="blog-category">
-    <!-- Tiêu đề chuyên mục + Link xem tất cả -->
-    <div class="blog-category-header">
-      <h2>Làm đẹp</h2>
-      <a href="#" class="view-all">Tất cả bài viết →</a>
-    </div>
-    <!-- Danh sách bài viết dạng card ngang -->
-    <div class="blog-list">
-
-      <!-- Bài viết 1 -->
-     <article class="blog-card">
-    <div class="video-frame">
-        <iframe 
-            src="https://www.youtube.com/embed/rH86s5h8yQs" 
-            title="Cocoon Official Video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
-    
-    <div class="blog-card-body">
-        <div class="blog-meta">
-            <span class="blog-tag">Cocoon</span>
-            <span class="blog-date">31.03.26</span>
-        </div>
-        <h3 class="blog-title">SỮA CHỐNG NẮNG BÍ ĐAO COCOON: BẢO VỆ RẤT CAO - TỰ TIN DƯỚI NẮNG</h3>
-        <p>Sữa Chống Nắng Bí Đao Cocoon với khả năng bảo vệ rất cao cùng các chỉ số SPF 50+, PA+++, UVA-PF 62.6, finish ráo mịn tự nhiên, kháng nước 80 phút, không cay mắt, dịu nhẹ cho làn da dầu mụn và da nhạy cảm. Đây sẽ là người bạn đồng hành giúp bạn hoàn toàn tự tin dưới nắng,
-           thoải mái vận động mà không lo ngại lớp nền bị xỉn màu hoặc bị chảy vệt trắng khi hoạt động ngoài trời.</p>
-        <a href="#" class="read-more">Xem thêm →</a>
-    </div>
-</article>
-      <!-- Bài viết 2 -->
-       <div class="blog-list">
-    <ul class="blog-ul">
-       <li class="blog-li">
-      <article class="blog-card">
-        <img src="../media/3buocsachdamat.png" alt="3 bước tẩy sạch da chết">
-        <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Làm đẹp</span>
-            <span class="blog-date">22.09.25</span>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0">Làm đẹp</h2>
+        <a href="#" class="text-decoration-none" style="color: #5a7a5a;">Tất cả bài viết →</a>
+      </div>
+      
+      <!-- Video bài viết -->
+      <div class="card mb-4 border-0 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <div class="ratio ratio-16x9 h-100">
+              <iframe src="https://www.youtube.com/embed/rH86s5h8yQs" title="Cocoon Video" allowfullscreen></iframe>
+            </div>
           </div>
-          <h3>3 bước tẩy da chết hiệu quả dành cho mặt từ cà phê Đắk Lắk</h3>
-          <p>Việc tẩy da chết tuy chỉ mất từ 10 – 15s nhưng nó sẽ giúp bạn loại bỏ các tế bào da chết trên bề mặt da một cách dễ dàng, giảm nguy cơ tắc nghẽn lỗ chân lông.</p>
-          <a href="#" class="read-more">Đọc thêm →</a>
-        </div>
-      </article>
-    </li>
-  
-
-      <!-- Bài viết 3 -->
-       <li class="blog-li">
-      <article class="blog-card">
-        <img src="../media/lanhmanh.png" alt="Sảm phẩm lành mạnh">
-        <div class="blog-card-body">
-          <div class="blog-meta">
-            <span class="blog-tag">Làm đẹp</span>
-            <span class="blog-date">22.09.25</span>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge" style="background: #5a7a5a;">Cocoon</span>
+                <small class="text-muted ms-2">31.03.26</small>
+              </div>
+              <h5 class="card-title fw-bold">SỮA CHỐNG NẮNG BÍ ĐAO COCOON: BẢO VỆ RẤT CAO - TỰ TIN DƯỚI NẮNG</h5>
+              <p class="card-text text-muted">Sữa Chống Nắng Bí Đao Cocoon với khả năng bảo vệ rất cao cùng các chỉ số SPF 50+, PA+++, UVA-PF 62.6, finish ráo mịn tự nhiên, kháng nước 80 phút.</p>
+              <a href="#" class="text-decoration-none" style="color: #5a7a5a;">Xem thêm →</a>
+            </div>
           </div>
-          <h3>Da dầu, mụn sẽ "ăn chay" như thế nào?</h3>
-          <p>Giống như các loại da khác, da dầu cũng sẽ đạt được trạng thái khỏe mạnh và mịn màng nếu được làm sạch đúng cách và được bảo vệ với các sản phẩm phù hợp.</p>
-          <a href="#" class="read-more">Đọc thêm →</a>
         </div>
-      </article>
-       </li>
+      </div>
 
-    </ul>
+      <!-- Các bài viết khác -->
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="../media/3buocsachdamat.png" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="3 bước tẩy da chết">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <div class="mb-2">
+                    <span class="badge" style="background: #5a7a5a;">Làm đẹp</span>
+                    <small class="text-muted ms-2">22.09.25</small>
+                  </div>
+                  <h6 class="card-title fw-bold">3 bước tẩy da chết hiệu quả dành cho mặt từ cà phê Đắk Lắk</h6>
+                  <a href="#" class="text-decoration-none small" style="color: #5a7a5a;">Đọc thêm →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="../media/lanhmanh.png" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Da dầu mụn">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <div class="mb-2">
+                    <span class="badge" style="background: #5a7a5a;">Làm đẹp</span>
+                    <small class="text-muted ms-2">22.09.25</small>
+                  </div>
+                  <h6 class="card-title fw-bold">Da dầu, mụn sẽ "ăn chay" như thế nào?</h6>
+                  <a href="#" class="text-decoration-none small" style="color: #5a7a5a;">Đọc thêm →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ========== CHUYÊN MỤC: COCOON (tin tức thương hiệu) ========== -->
-  <section class="blog-category">
-  <div class="blog-category-header">
-    <h2>Cocoon</h2>
-    <a href="#" class="view-all">Tất cả bài viết →</a>
-  </div>
-<!--Bài viết 1-->
-  <div class="blog-list">
-    <ul class="blog-unorder-list">
-     <!--Bài viết số 1--> 
-      <li class="blog-item">
-        <article class="blog-card">
-          <img src="../media/myphammuonnoi.png" alt="Cocoon đi muôn nơi">
-          <div class="blog-card-body">
-            <div class="blog-meta">
-              <span class="blog-tag">Cocoon</span>
-              <span class="blog-date">31.03.26</span>
+  <!-- ========== CHUYÊN MỤC: COCOON ========== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0">Cocoon</h2>
+        <a href="#" class="text-decoration-none" style="color: #5a7a5a;">Tất cả bài viết →</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="../media/myphammuonnoi.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Cocoon đi muôn nơi">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge" style="background: #5a7a5a;">Cocoon</span>
+                <small class="text-muted ms-2">31.03.26</small>
+              </div>
+              <h6 class="card-title fw-bold">Cocoon và hành trình mang nguyên liệu Việt ra thế giới</h6>
+              <p class="card-text small text-muted">Điều này đã mở ra cơ hội cho mỹ phẩm thuần chay từ Việt Nam bước vào một trong những trung tâm làm đẹp hàng đầu thế giới.</p>
+              <a href="#" class="text-decoration-none small" style="color: #5a7a5a;">Đọc thêm →</a>
             </div>
-            <h3>Cocoon và hành trình mang nguyên liệu Việt ra thế giới</h3>
-            <p>Điều này đã mở ra cơ hội cho mỹ phẩm thuần chay từ Việt Nam bước vào một trong những trung tâm làm đẹp hàng đầu thế giới.</p>
-            <a href="#" class="read-more">Đọc thêm →</a>
           </div>
-        </article>
-      </li>
-<!--Bài viết số 2-->
-      <li class="blog-item">
-        <article class="blog-card">
-          <img src="../media/Thuhoipin.png" alt="chương trình “Thu Hồi Pin Cũ – Bảo Vệ Trái Đất Xanh">
-          <div class="blog-card-body">
-            <div class="blog-meta">
-              <span class="blog-tag">Cocoon</span>
-              <span class="blog-date">02.03.26</span>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="../media/Thuhoipin.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Thu hồi pin">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge" style="background: #5a7a5a;">Cocoon</span>
+                <small class="text-muted ms-2">02.03.26</small>
+              </div>
+              <h6 class="card-title fw-bold">Chương trình "Thu hồi pin cũ – Bảo vệ trái đất xanh" năm 2026</h6>
+              <p class="card-text small text-muted">Tiếp nối những hành trình bền bỉ vì môi trường, Cocoon tiếp tục phát động chương trình lần thứ 5.</p>
+              <a href="#" class="text-decoration-none small" style="color: #5a7a5a;">Đọc thêm →</a>
             </div>
-            <h3>Chương trình "Thu hồi pin cũ – Bảo vệ trái đất xanh" năm 2026</h3>
-            <p>Tiếp nối những hành trình bền bỉ vì môi trường, Cocoon tiếp tục phát động chương trình "Thu Hồi Pin Cũ – Bảo Vệ Trái Đất Xanh" lần thứ 5.</p>
-            <a href="#" class="read-more">Đọc thêm →</a>
           </div>
-        </article>
-      </li>
-<!--Bài viết số 3-->
-      <li class="blog-item">
-        <article class="blog-card">
-          <img src="../media/dinhvithuonghieu.png" alt="Định vị thương hiệu">
-          <div class="blog-card-body">
-            <div class="blog-meta">
-              <span class="blog-tag">Cocoon</span>
-              <span class="blog-date">03.12.25</span>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="../media/dinhvithuonghieu.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Định vị thương hiệu">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge" style="background: #5a7a5a;">Cocoon</span>
+                <small class="text-muted ms-2">03.12.25</small>
+              </div>
+              <h6 class="card-title fw-bold">Chiến lược Marketing của Cocoon về mỹ phẩm thuần chay an toàn</h6>
+              <p class="card-text small text-muted">Chiến lược marketing của Cocoon đã truyền tải thông điệp đến người dùng là mỹ phẩm thuần chay.</p>
+              <a href="#" class="text-decoration-none small" style="color: #5a7a5a;">Đọc thêm →</a>
             </div>
-            <h3>Chiến lược Marketing của Cocoon về mỹ phẩm thuần chay an toàn</h3>
-            <p>Chiến lược marketing của Cocoon đã truyền tải thông điệp đến người dùng là mỹ phẩm thuần chay, bảo vệ môi trường và không thử nghiệm trên động vật.</p>
-            <a href="#" class="read-more">Đọc thêm →</a>
           </div>
-        </article>
-      </li>
-
-    </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER (giống trang chủ) ========== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="../media/coconutlogo.png" alt="The Cocoon">
+  <!-- ========== FOOTER ========== -->
+  <footer class="text-white py-4" style="background: #3e2723;">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+          <img src="../media/coconutlogo.png" alt="The Cocoon" height="60">
+        </div>
+        <div class="col-md-8">
+          <p class="mb-0 text-secondary">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
+        </div>
+        <div class="col-md-2 text-end">
+          <a href="#" class="btn" style="background: #e8a88a;">Liên hệ</a>
+        </div>
       </div>
-      <p class="footer-desc">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
-      <a href="#" class="btn-contact">Liên hệ</a>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-col">
-        <p class="social-title">Social</p>
-        <a href="#">📷 Instagram</a>
-        <a href="#">📘 Facebook</a>
-      </div>
-      <div class="footer-col">
-        <p class="social-title">Contact Us</p>
-        <p class="footer-contact">HOTLINE: <a href="tel:19009300">19009300</a></p>
-        <p class="footer-contact">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></p>
+      <hr class="border-secondary">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Social</p>
+          <a href="#" class="text-secondary text-decoration-none d-block mb-1">📷 Instagram</a>
+          <a href="#" class="text-secondary text-decoration-none d-block">📘 Facebook</a>
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Contact Us</p>
+          <p class="text-secondary mb-1">HOTLINE: <a href="tel:19009300" class="text-secondary">19009300</a></p>
+          <p class="text-secondary">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM" class="text-secondary">WE@COCOONVIETNAM.COM</a></p>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-

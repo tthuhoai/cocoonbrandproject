@@ -4,91 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sản phẩm - The Cocoon</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="product.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="../media/coconutlogo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="logo">
-      <img src="../media/coconutlogo1.png" alt="The Cocoon">
+  <nav class="navbar navbar-expand-lg bg-white py-2 px-3 px-lg-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="../media/coconutlogo1.png" alt="The Cocoon" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="product.html">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Bài viết</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block">
+        <span class="fw-medium">📞 19009300</span>
+      </div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="product.html">Sản phẩm</a>
-      <a href="blog.html">Bài viết</a>
-      <a href="login.html">Đăng nhập</a>
-    </nav>
-    <div class="hotline">📞 19009300</div>
-  </header>
+  </nav>
 
-  <!-- ========== DANH MỤC SẢN PHẨM + TẤT CẢ SẢN PHẨM ========== -->
-  <section class="products">
-    <h2>Danh mục sản phẩm <span class="leaf">🌿</span></h2>
-    <div class="products-content">
-      <!-- Danh mục bên trái -->
-      <ol class="category-list">
-        <li><a href="#face">Chăm sóc da mặt (Face)</a></li>
-        <li><a href="#body">Chăm sóc cơ thể (Body)</a></li>
-        <li><a href="#hair">Chăm sóc tóc (Hair)</a></li>
-        <li><a href="#coffee">Dòng sản phẩm Cà phê Đắk Lắk</a></li>
-        <li><a href="#buoi">Dòng sản phẩm Bưởi / Bí đao</a></li>
-      </ol>
-      
-      <!-- Sản phẩm bên phải -->
-      <div class="product-cards">
-        <h3 class="product-cards-title">Tất cả sản phẩm</h3>
-        <div class="all-products-grid">
-          <!-- Hàng 1 -->
-          <div class="all-product-item">
-            <img src="../media/caphesachda.png" alt="Cà phê Đắk Lắk">
-            <p class="all-product-name">Cà phê Đắk Lắk làm sạch da chết cơ thể 200ml</p>
-            <p class="all-product-price">133.000 đ</p>
-          </div>
-          <div class="all-product-item">
-            <img src="../media/tonerHG.png" alt="Toner nước cân bằng da">
-            <p class="all-product-name">Toner nước cân bằng da SEN Hậu Giang cocoon 310ml</p>
-            <p class="all-product-price">299.000 đ</p>
-          </div>
-          <div class="all-product-item">
-            <img src="../media/gelruamat.png" alt="Gel rửa mặt cà phê Đắk Lắk">
-            <p class="all-product-name">Gel rửa mặt cà phê Đắk Lắk 310ml</p>
-            <p class="all-product-price">299.000 đ</p>
-          </div>
-          <!-- Hàng 2 -->
-          <div class="all-product-item">
-            <img src="../media/duongam.png" alt="Sáp dưỡng ẩm đa năng">
-            <p class="all-product-name">Sáp dưỡng ẩm đa năng sen Hậu Giang 30ml</p>
-            <p class="all-product-price">192.000 đ</p>
-          </div>
-          <div class="all-product-item">
-            <img src="../media/srmnghe.png" alt="Sữa rửa mặt nghệ Hưng Yên">
-            <p class="all-product-name">Sữa rửa mặt nghệ Hưng Yên 310ml</p>
-            <p class="all-product-price">299.000 đ</p>
-          </div>
-          <div class="all-product-item">
-            <img src="../media/matnangheHY (1).png" alt="Mặt nạ nghệ Hưng Yên">
-            <p class="all-product-name">Mặt nạ nghệ Hưng Yên 100ml</p>
-            <p class="all-product-price">339.000 đ</p>
-          </div>
-          <!-- Hàng 3 -->
-          <div class="all-product-item">
-            <img src="../media/xitkhoang.png" alt="Xịt khoáng nghệ Hưng Yên">
-            <p class="all-product-name">Xịt khoáng nghệ Hưng Yên 130ml</p>
-            <p class="all-product-price">212.000 đ</p>
-          </div>
-          <div class="all-product-item">
-            <img src="../media/suachongnang.png" alt="Sữa chống nắng bí đao">
-            <p class="all-product-name">Sữa chống nắng bí đao 50ml</p>
-            <p class="all-product-price">432.000 đ</p>
-          </div>
-          <div class="all-product-item">
-            <img src="../media/caphesachdamat.png" alt="Cà phê Đắk Lắk làm sạch da chết mặt">
-            <p class="all-product-name">Cà phê Đắk Lắk làm sạch da chết mặt 150ml</p>
-            <p class="all-product-price">172.000 đ</p>
+  <!-- ========== DANH MỤC + SẢN PHẨM ========== -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Danh mục sản phẩm <span>🌿</span></h2>
+      <div class="row">
+        <!-- Danh mục bên trái -->
+        <div class="col-lg-3 mb-4">
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item border-0 ps-0"><a href="#" class="text-decoration-none text-dark">Chăm sóc da mặt (Face)</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="#" class="text-decoration-none text-dark">Chăm sóc cơ thể (Body)</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="#" class="text-decoration-none text-dark">Chăm sóc tóc (Hair)</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="#" class="text-decoration-none text-dark">Dòng sản phẩm Cà phê Đắk Lắk</a></li>
+            <li class="list-group-item border-0 ps-0"><a href="#" class="text-decoration-none text-dark">Dòng sản phẩm Bưởi / Bí đao</a></li>
+          </ol>
+        </div>
+        <!-- Tất cả sản phẩm -->
+        <div class="col-lg-9">
+          <h3 class="text-center fst-italic mb-4" style="font-family: 'Playfair Display', serif; color: #5a7a5a;">Tất cả sản phẩm</h3>
+          <div class="row g-4">
+            <!-- Sản phẩm 1 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/caphesachda.png" class="card-img-top" alt="Cà phê Đắk Lắk" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Cà phê Đắk Lắk làm sạch da chết cơ thể 200ml</p>
+                  <p class="fw-bold">133.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 2 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/tonerHG.png" class="card-img-top" alt="Toner" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Toner nước cân bằng da SEN Hậu Giang cocoon 310ml</p>
+                  <p class="fw-bold">299.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 3 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/gelruamat.png" class="card-img-top" alt="Gel rửa mặt" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Gel rửa mặt cà phê Đắk Lắk 310ml</p>
+                  <p class="fw-bold">299.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 4 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/duongam.png" class="card-img-top" alt="Sáp dưỡng ẩm" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Sáp dưỡng ẩm đa năng sen Hậu Giang 30ml</p>
+                  <p class="fw-bold">192.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 5 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/srmnghe.png" class="card-img-top" alt="Sữa rửa mặt nghệ" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Sữa rửa mặt nghệ Hưng Yên 310ml</p>
+                  <p class="fw-bold">299.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 6 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/matnangheHY (1).png" class="card-img-top" alt="Mặt nạ nghệ" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Mặt nạ nghệ Hưng Yên 100ml</p>
+                  <p class="fw-bold">339.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 7 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/xitkhoang.png" class="card-img-top" alt="Xịt khoáng" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Xịt khoáng nghệ Hưng Yên 130ml</p>
+                  <p class="fw-bold">212.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 8 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/suachongnang.png" class="card-img-top" alt="Sữa chống nắng" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Sữa chống nắng bí đao 50ml</p>
+                  <p class="fw-bold">432.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 9 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center h-100">
+                <img src="../media/caphesachdamat.png" class="card-img-top" alt="Cà phê làm sạch da chết mặt" style="height: 250px; object-fit: contain;">
+                <div class="card-body">
+                  <p class="card-text">Cà phê Đắk Lắk làm sạch da chết mặt 150ml</p>
+                  <p class="fw-bold">172.000 đ</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -96,27 +153,36 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="../media/coconutlogo.png" alt="The Cocoon">
+  <footer class="text-white py-4" style="background: #3e2723;">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+          <img src="../media/coconutlogo.png" alt="The Cocoon" height="60">
+        </div>
+        <div class="col-md-8">
+          <p class="mb-0 text-secondary">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
+        </div>
+        <div class="col-md-2 text-end">
+          <a href="#" class="btn" style="background: #e8a88a;">Liên hệ</a>
+        </div>
       </div>
-      <p class="footer-desc">Cocoon – Tinh túy từ thực vật Việt Nam cho nhịp sống hiện đại</p>
-      <a href="#" class="btn-contact">Liên hệ</a>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-col">
-        <p class="social-title">Social</p>
-        <a href="#">📷 Instagram</a>
-        <a href="#">📘 Facebook</a>
-      </div>
-      <div class="footer-col">
-        <p class="social-title">Contact Us</p>
-        <p class="footer-contact">HOTLINE: <a href="tel:19009300">19009300</a></p>
-        <p class="footer-contact">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></p>
+      <hr class="border-secondary">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Social</p>
+          <a href="#" class="text-secondary text-decoration-none d-block mb-1">📷 Instagram</a>
+          <a href="#" class="text-secondary text-decoration-none d-block">📘 Facebook</a>
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold mb-2">Contact Us</p>
+          <p class="text-secondary mb-1">HOTLINE: <a href="tel:19009300" class="text-secondary">19009300</a></p>
+          <p class="text-secondary">EMAIL: <a href="mailto:WE@COCOONVIETNAM.COM" class="text-secondary">WE@COCOONVIETNAM.COM</a></p>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
